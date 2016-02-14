@@ -75,7 +75,7 @@
 // extruder temperature is above/below EXTRUDER_AUTO_FAN_TEMPERATURE.
 // Multiple extruders can be assigned to the same pin in which case
 // the fan will turn on when any selected extruder is above the threshold.
-#define EXTRUDER_0_AUTO_FAN_PIN   1 // Jimmy: was -1, daarna 9, nu 1
+#define EXTRUDER_0_AUTO_FAN_PIN   44 // Jimmy: was -1, daarna 9, nu 44 (44 is beschikbaar op aux 2, voor relay)
 #define EXTRUDER_1_AUTO_FAN_PIN   -1
 #define EXTRUDER_2_AUTO_FAN_PIN   -1
 #define EXTRUDER_AUTO_FAN_TEMPERATURE 50
