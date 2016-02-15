@@ -470,14 +470,14 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 
 //// MOVEMENT SETTINGS
 #define NUM_AXIS 4 // The axis order in all axis related arrays is X, Y, Z, E
-#define HOMING_FEEDRATE {50*60, 50*60, 4*60, 0}  // set the homing speeds (mm/min)
+#define HOMING_FEEDRATE {100*60, 100*60, 8*60, 0}  // set the homing speeds (mm/min) Jimmy: was 50 50 4
 
 // default settings
 
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   {80, 80, 4000, 775}  // default steps per unit for A4988 (P3Steel)
 #define DEFAULT_AXIS_STEPS_PER_UNIT   {160, 160, 8000, 1550}  // default steps per unit for DRV8825 (P3Steel)
-#define DEFAULT_MAX_FEEDRATE          {400, 400, 1, 45}    // (mm/sec)
-#define DEFAULT_MAX_ACCELERATION      {5000,5000,10,5000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
+#define DEFAULT_MAX_FEEDRATE          {400, 400, 2, 45}    // (mm/sec) Jimmy: Z was 1
+#define DEFAULT_MAX_ACCELERATION      {5000,5000,20,5000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot. Jimmy, Z was 10
 
 #define DEFAULT_ACCELERATION          1000    // X, Y, Z and E max acceleration in mm/s^2 for printing moves
 #define DEFAULT_RETRACT_ACCELERATION  2000   // X, Y, Z and E max acceleration in mm/s^2 for retracts
